@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Tacos No.1</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Back to home</a>
+        </nav>
+    </header>
+    <body>
+        <h2></h2>
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <div>
+                    <label for="first">First name</label>
+                    <input type="text" name="first" id="first" marked required autocomplete="on">
+                </div>
+                <div>
+                    <label for="last">Last name</label>
+                    <input type="text" name="last" id="last">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" type="email" required autocomplete="on" placeholder="youraccount@email.com" size="25">
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Give us ratings (optional)</legend>
+                <div id="favorites">
+                    <span>Your Favorites?</span>
+                    <div>
+                        <input type="checkbox" name="pollo" id="pollo">
+                        <label for="pollo">Pollo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="beef" id="beef">
+                        <label for="beef">Beef</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="carne asada" id="carne asada">
+                        <label for="carne asada">Carne Asada</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="sofritas" id="sofritas">
+                        <label for="sofritas">Sofritas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="carnitas" id="carnitas">
+                        <label for="carnitas">Carnitas</label>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <span>How would you rate us?</span>
+                    <div>
+                        <input type="radio" name="star" id="1_star">
+                        <label for="1_star">1 star</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="star" id="2_stars">
+                        <label for="2_stars">2 stars</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="star" id="3_stars">
+                        <label for="3_stars">3 stars</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="star" id="4_stars">
+                        <label for="4_stars">4 stars</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="star" id="5_stars">
+                        <label for="5_stars">5 stars</label>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <span>What should we add to our menu?</span>
+                    <div>
+                        <select name="new_item" id="new_item">
+                            <optgroup label="Meat">
+                                <option value="birria">Birria</option>
+                                <option value="meat">Different meats</option>
+                            </optgroup>
+                            <optgroup label="Seafood">
+                                <option value="tuna">Tuna</option>
+                                <option value="fried_fish">Fried fish</option>
+                            </optgroup>
+                            <optgroup label="Sides">
+                                <option value="guacamole">Guacamole</option>
+                                <option value="tortilla_chips">Tortilla Chips</option>
+                                <option value="nachos">Nachos</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <span>What didn't you like so much?</span>
+                    <div>
+                        <input type="text" id="list_input" name="least_fav" list="list" autocomplete="on">
+                        <datalist id="list">
+                            <option value="Pollo tacos"></option>
+                            <option value="Beef tacos"></option>
+                            <option value="Carne Asada tacos"></option>
+                            <option value="Sofritas tacos"></option>
+                            <option value="Lack of variety"></option>
+                            <option value="Customer service"></option>
+                            <option value="Store cleanliness"></option>
+                        </datalist>
+                    </div>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Your thoughts</legend>
+                <div>
+                   <label for="message"></label>
+                   <textarea type="text" name="message" id="message" style="height:100px; width:500px; text-align: left; vertical-align: top;" autocomplete="off"></textarea>
+                </div>
+            </fieldset>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Send!</button>
+        </form>
+    </body>
+</body>
+</html>
